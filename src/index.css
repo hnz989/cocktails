@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--slantedFont);
+  /*font-family: var(--slantedFont);*/
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
