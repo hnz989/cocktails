@@ -28,7 +28,7 @@ const AppProvider = ({children}) => {
             }
             setLoading(false);
         } catch (error) {
-            console.log(error.response);
+            console.log(error);
             setLoading(false);
         }
     }
@@ -39,9 +39,9 @@ const AppProvider = ({children}) => {
         value={{
             loading,
             cocktails,
-            setSearchTerm,
+            setSearchTerm
         }}>
-        }{children}</AppContext.Provider>
+        {children}</AppContext.Provider>
 }
 // make sure use
 export const useGlobalContext = () => {
